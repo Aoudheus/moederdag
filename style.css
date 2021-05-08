@@ -44,7 +44,19 @@ img {
   position: absolute;
   z-index: 1;
   top: 10rem;
-  transition: all 2s ease;
+}
+
+.active {
+  animation: cadeauKlik 2s ease forwards;
+}
+
+@keyframes cadeauKlik {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(200);
+  }
 }
 
 .jumping {
@@ -98,10 +110,6 @@ img {
   100% {
     transform: scale(1);
   }
-}
-
-.active {
-  transform: scale(200);
 }
 
 .hidden {
